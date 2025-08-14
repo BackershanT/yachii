@@ -1,0 +1,48 @@
+.footer {
+  background-color: #000; /* Dark background */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Padding for small screens */
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer .sitename {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+/* Tablet view (portrait & landscape) */
+@media (max-width: 1024px) {
+  .footer .copyright {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.8rem 0;
+  }
+  .footer .copyright {
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Very small devices (phones under 480px) */
+@media (max-width: 480px) {
+  .footer .copyright {
+    font-size: 0.75rem;
+  }
+}

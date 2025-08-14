@@ -1,0 +1,113 @@
+/* Section Wrapper */
+.objectives-section {
+  padding: 4rem 1rem;
+  background: #f8f9fa;
+}
+
+.objectives-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left Image Styling */
+.objectives-image {
+  flex: 1 1 400px;
+}
+.objectives-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.objectives-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Right Content */
+.objectives-content {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Objective Cards */
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.objective-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.objective-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.objective-card .icon {
+  font-size: 1.8rem;
+  color: #ff9800;
+}
+
+.objective-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.objective-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .objectives-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .objective-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .objective-card h4 {
+    font-size: 1rem;
+  }
+
+  .objective-card p {
+    font-size: 0.9rem;
+  }
+}

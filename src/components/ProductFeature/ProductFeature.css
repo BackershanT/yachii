@@ -1,0 +1,53 @@
+.product-feature {
+  background-color: #fff;
+  padding: 4rem 1rem;
+}
+
+.product-feature h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.product-text h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.product-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .product-text {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .product-text h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-feature {
+    padding: 2rem 1rem;
+  }
+  .product-feature h2 {
+    font-size: 1.5rem;
+  }
+  .product-text p {
+    font-size: 0.95rem;
+  }
+}

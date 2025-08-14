@@ -1,0 +1,117 @@
+/* Section Styling */
+.contact.section {
+  padding: 4rem 1rem;
+  background-color: #f8f9fa;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-title .subtitle {
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Layout */
+.contact-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left Info Section */
+.contact-info {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-right: 1rem;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.3rem 0 0;
+}
+
+.email-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Right Contact Form */
+.contact-form-wrapper {
+  flex: 1.5;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-row {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  .section-title .subtitle {
+    font-size: 0.95rem;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.6rem;
+  }
+  .section-title .subtitle {
+    font-size: 0.9rem;
+  }
+}
