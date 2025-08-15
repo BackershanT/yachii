@@ -1,0 +1,67 @@
+.mission-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Text Side */
+.mission-text {
+  flex: 1 1 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.mission-text p {
+  margin-bottom: 1.2rem;
+}
+
+.content-title {
+  text-align: justify;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0011ff;
+}
+
+/* Image Side */
+.mission-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.mission-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.mission-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-content {
+    flex-direction: column;
+  }
+
+  .mission-text,
+  .mission-image {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-text {
+    font-size: 0.95rem;
+  }
+}

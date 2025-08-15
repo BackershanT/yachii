@@ -47,9 +47,7 @@ export default function SubscribeForm() {
     <section className="subscribe-section">
       <div className="subscribe-container">
         <h2 className="subscribe-title">Stay Updated 🚀</h2>
-        <p className="subscribe-subtitle">
-          Subscribe to our newsletter for the latest updates and offers.
-        </p>
+        <p className="subscribe-subtitle">Subscribe to our newsletter for the latest updates.</p>
 
         <form onSubmit={handleSubmit} className="subscribe-form">
           <input

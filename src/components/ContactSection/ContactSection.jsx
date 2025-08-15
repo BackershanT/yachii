@@ -5,10 +5,10 @@ import "./ContactSection.css";
 const ContactSection = () => (
   <section id="contact" className="contact section">
     <div className="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p className="subtitle">
+      <h2>CONTACT</h2>
+      {/* <p className="subtitle">
         We'd love to hear from you. Reach out to us at any of our locations below.
-      </p>
+      </p> */}
     </div>
 
     <div className="container" data-aos="fade-up" data-aos-delay="100">

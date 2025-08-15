@@ -41,8 +41,6 @@ const Home = () => {
 
       {/* Main Content Sections */}
       <MissionSection />
-      <ObjectivesSection />
-
       {/* Lazy-loaded Additional Sections */}
       <Suspense fallback={<ContentLoader message="Loading content..." />}>
         <ProductFeature
